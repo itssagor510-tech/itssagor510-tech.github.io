@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ome Baidya | Digital Marketing & SEO Specialist</title>
 
-    <meta name="description" content="Ome Baidya is a Digital Marketing & SEO Specialist focused on SEO, Local SEO, technical SEO, content strategy and digital marketing.">
+    <meta name="description"
+        content="Ome Baidya is a Digital Marketing and SEO Specialist focused on Local SEO, Technical SEO, On-Page SEO, Keyword Research, SEO Content, Google Ads and Meta Ads.">
 
-    <meta name="keywords" content="Ome Baidya, SEO Specialist, Digital Marketing Specialist, Local SEO, Technical SEO, SEO Expert">
+    <meta name="keywords"
+        content="Ome Baidya, Digital Marketing Specialist, SEO Specialist, Local SEO, Technical SEO, On Page SEO, Keyword Research, Google Ads, Meta Ads">
 
     <meta name="author" content="Ome Baidya">
 
@@ -18,22 +21,24 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
             scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #080b12;
-            color: #ffffff;
-            line-height: 1.6;
+            background: #09101a;
+            color: #f4f7fb;
+            line-height: 1.7;
         }
 
         a {
-            text-decoration: none;
             color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
         }
 
         .container {
@@ -42,96 +47,96 @@
             margin: auto;
         }
 
-        /* NAVBAR */
+        /* ================= HEADER ================= */
 
-        nav {
+        header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(8, 11, 18, 0.92);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid #1d2533;
+            background: rgba(9, 16, 26, 0.95);
+            border-bottom: 1px solid #1d2a3a;
+            backdrop-filter: blur(10px);
         }
 
-        .nav-container {
-            height: 75px;
+        nav {
+            min-height: 75px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 25px;
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 25px;
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .logo span {
-            color: #4f9cff;
+            color: #4da3ff;
         }
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 25px;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
-            color: #c8ced8;
-            font-size: 14px;
+            color: #d8e0ea;
+            font-size: 15px;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #4f9cff;
+            color: #4da3ff;
         }
 
         .nav-btn {
-            padding: 10px 18px;
-            border: 1px solid #4f9cff;
-            border-radius: 6px;
-            color: #4f9cff;
+            background: #4da3ff;
+            color: #06101d !important;
+            padding: 10px 17px;
+            border-radius: 7px;
+            font-weight: 700;
         }
 
-        /* HERO */
+        /* ================= HERO ================= */
 
         .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            padding: 80px 0;
+            padding: 100px 0 80px;
         }
 
         .hero-grid {
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 70px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
             align-items: center;
         }
 
-        .small-title {
-            color: #4f9cff;
+        .eyebrow {
+            color: #4da3ff;
+            font-weight: 700;
             font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
             margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .hero h1 {
-            font-size: clamp(45px, 6vw, 78px);
-            line-height: 1.05;
-            margin-bottom: 25px;
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1.08;
+            margin-bottom: 22px;
         }
 
         .hero h1 span {
-            color: #4f9cff;
+            color: #4da3ff;
         }
 
         .hero p {
-            color: #aab2bf;
+            color: #b7c2d0;
             font-size: 18px;
-            max-width: 650px;
+            max-width: 680px;
             margin-bottom: 30px;
         }
 
@@ -142,30 +147,30 @@
         }
 
         .btn {
-            padding: 13px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: 0.3s;
             display: inline-block;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.3s;
         }
 
         .btn-primary {
-            background: #4f9cff;
-            color: #07101d;
+            background: #4da3ff;
+            color: #06101d;
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
 
-        .btn-outline {
-            border: 1px solid #344052;
-            color: #ffffff;
+        .btn-secondary {
+            border: 1px solid #405166;
+            color: #fff;
         }
 
-        .btn-outline:hover {
-            border-color: #4f9cff;
-            color: #4f9cff;
+        .btn-secondary:hover {
+            border-color: #4da3ff;
+            color: #4da3ff;
         }
 
         .hero-image {
@@ -174,57 +179,85 @@
 
         .hero-image img {
             width: 100%;
-            max-height: 600px;
-            object-fit: cover;
-            border-radius: 14px;
-            border: 1px solid #293342;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            max-width: 420px;
+            margin: auto;
+            border-radius: 18px;
+            border: 1px solid #26384c;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.35);
         }
 
-        /* SECTIONS */
+        /* ================= GENERAL ================= */
 
         section {
-            padding: 100px 0;
+            padding: 90px 0;
         }
 
         .section-title {
+            text-align: center;
             margin-bottom: 55px;
         }
 
-        .section-title .small-title {
-            margin-bottom: 8px;
+        .section-title .small {
+            color: #4da3ff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
         }
 
         .section-title h2 {
-            font-size: 42px;
+            font-size: 40px;
+            margin: 10px 0 15px;
         }
 
         .section-title p {
-            color: #929baa;
-            max-width: 650px;
-            margin-top: 12px;
+            max-width: 700px;
+            margin: auto;
+            color: #aeb9c7;
         }
 
-        /* ABOUT */
+        /* ================= ABOUT ================= */
 
         .about-grid {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
-            gap: 70px;
+            gap: 55px;
             align-items: center;
         }
 
         .about-image img {
-            width: 100%;
-            border-radius: 12px;
+            border-radius: 15px;
+            border: 1px solid #26384c;
         }
 
-        .about-text p {
-            color: #aab2bf;
+        .about-content h3 {
+            font-size: 30px;
             margin-bottom: 18px;
         }
 
-        /* SKILLS */
+        .about-content p {
+            color: #b7c2d0;
+            margin-bottom: 18px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 10px;
+            color: #d8e0ea;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: #4da3ff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* ================= SKILLS ================= */
 
         .skills-grid {
             display: grid;
@@ -233,173 +266,289 @@
         }
 
         .skill-card {
-            padding: 28px;
-            background: #0e131c;
-            border: 1px solid #202a38;
-            border-radius: 10px;
+            background: #0e1824;
+            border: 1px solid #1f3042;
+            padding: 25px;
+            border-radius: 12px;
             transition: 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
-            border-color: #4f9cff;
+            border-color: #4da3ff;
         }
 
         .skill-card h3 {
             margin-bottom: 10px;
+            font-size: 20px;
         }
 
         .skill-card p {
-            color: #929baa;
-            font-size: 14px;
+            color: #aeb9c7;
+            font-size: 15px;
         }
 
-        /* SERVICES */
+        /* ================= SERVICES ================= */
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 22px;
         }
 
-        .service {
+        .service-card {
+            background: linear-gradient(145deg, #0f1b28, #0b141f);
+            border: 1px solid #203145;
             padding: 30px;
-            background: #0e131c;
-            border-radius: 10px;
-            border: 1px solid #202a38;
+            border-radius: 14px;
         }
 
         .service-number {
-            color: #4f9cff;
+            color: #4da3ff;
             font-size: 14px;
-            margin-bottom: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
 
-        .service h3 {
-            margin-bottom: 10px;
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
         }
 
-        .service p {
-            color: #929baa;
-            font-size: 14px;
+        .service-card p {
+            color: #aeb9c7;
+            font-size: 15px;
         }
 
-        /* PROJECTS */
+        /* ================= PROJECTS ================= */
 
-        .projects {
+        .projects-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
 
-        .project {
-            background: #0e131c;
-            border: 1px solid #202a38;
+        .project-card {
+            background: #0e1824;
+            border: 1px solid #203145;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 14px;
         }
 
-        .project h3 {
-            margin-bottom: 10px;
+        .project-tag {
+            display: inline-block;
+            color: #4da3ff;
+            border: 1px solid #31506e;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 15px;
         }
 
-        .project p {
-            color: #929baa;
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #aeb9c7;
             margin-bottom: 18px;
         }
 
-        .tags {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
+        .project-card ul {
+            padding-left: 20px;
+            color: #cbd5e1;
         }
 
-        .tag {
-            font-size: 12px;
-            padding: 6px 10px;
-            border-radius: 20px;
-            background: #182130;
-            color: #9ec8ff;
+        .project-card li {
+            margin-bottom: 6px;
         }
 
-        /* TOOLS */
+        /* ================= TOOLS ================= */
 
         .tools {
             display: flex;
-            gap: 12px;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
         }
 
         .tool {
-            padding: 10px 16px;
-            border: 1px solid #283342;
-            border-radius: 6px;
-            color: #b8c0cc;
+            background: #101d2b;
+            border: 1px solid #263b51;
+            padding: 10px 17px;
+            border-radius: 30px;
+            color: #dce5ef;
             font-size: 14px;
         }
 
-        /* CONTACT */
+        /* ================= PROCESS ================= */
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            padding: 25px;
+            border-left: 2px solid #4da3ff;
+            background: #0d1722;
+        }
+
+        .process-card span {
+            color: #4da3ff;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .process-card h3 {
+            margin: 10px 0;
+        }
+
+        .process-card p {
+            color: #aeb9c7;
+            font-size: 14px;
+        }
+
+        /* ================= FAQ ================= */
+
+        .faq {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        details {
+            background: #0e1824;
+            border: 1px solid #203145;
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-bottom: 12px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        details p {
+            color: #aeb9c7;
+            margin-top: 12px;
+        }
+
+        /* ================= CONTACT ================= */
 
         .contact-box {
-            background: #0e131c;
-            border: 1px solid #202a38;
-            border-radius: 12px;
-            padding: 60px;
+            max-width: 900px;
+            margin: auto;
             text-align: center;
+            background: linear-gradient(145deg, #101d2b, #0b141f);
+            border: 1px solid #263b51;
+            padding: 60px 35px;
+            border-radius: 18px;
         }
 
         .contact-box h2 {
-            font-size: 42px;
+            font-size: 40px;
             margin-bottom: 15px;
         }
 
         .contact-box p {
-            color: #929baa;
-            margin-bottom: 25px;
+            color: #aeb9c7;
+            max-width: 650px;
+            margin: 0 auto 25px;
         }
 
-        /* FOOTER */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-link {
+            border: 1px solid #30465d;
+            padding: 11px 18px;
+            border-radius: 7px;
+            color: #dce5ef;
+        }
+
+        .contact-link:hover {
+            color: #4da3ff;
+            border-color: #4da3ff;
+        }
+
+        /* ================= FOOTER ================= */
 
         footer {
-            border-top: 1px solid #1d2533;
+            border-top: 1px solid #1d2a3a;
             padding: 30px 0;
-            color: #727b89;
-            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer p {
+            color: #8795a6;
             font-size: 14px;
         }
 
-        /* MOBILE */
+        /* ================= RESPONSIVE ================= */
 
-        @media (max-width: 850px) {
-
-            .nav-links {
-                display: none;
-            }
+        @media (max-width: 900px) {
 
             .hero-grid,
             .about-grid {
                 grid-template-columns: 1fr;
             }
 
-            .hero {
-                padding-top: 60px;
+            .hero-image {
+                order: -1;
             }
 
             .skills-grid,
             .services-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .projects {
-                grid-template-columns: 1fr;
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .contact-box {
-                padding: 40px 20px;
+        }
+
+        @media (max-width: 650px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 65px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .skills-grid,
+            .services-grid,
+            .projects-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
             }
 
             .contact-box h2 {
-                font-size: 32px;
+                font-size: 30px;
             }
 
         }
@@ -407,73 +556,102 @@
     </style>
 </head>
 
+
 <body>
 
-<!-- NAVIGATION -->
 
-<nav>
-    <div class="container nav-container">
+<!-- ================= HEADER ================= -->
 
-        <a href="#" class="logo">
-            OME<span>.</span>
-        </a>
+<header>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="container">
 
-        <a href="#contact" class="nav-btn">Let's Talk</a>
+        <nav>
+
+            <a href="#home" class="logo">
+                OME<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#process">Process</a></li>
+
+                <li><a href="#faq">FAQs</a></li>
+
+                <li>
+                    <a href="#contact" class="nav-btn">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
 
     </div>
-</nav>
+
+</header>
 
 
-<!-- HERO -->
 
-<section class="hero">
+<!-- ================= HERO ================= -->
 
-    <div class="container hero-grid">
+<section class="hero" id="home">
 
-        <div>
+    <div class="container">
 
-            <div class="small-title">
-                Digital Marketing & SEO Specialist
+        <div class="hero-grid">
+
+            <div>
+
+                <div class="eyebrow">
+                    Digital Marketing & SEO Specialist
+                </div>
+
+                <h1>
+                    I Help Businesses
+                    <span>Grow Online.</span>
+                </h1>
+
+                <p>
+                    Hi, I'm <strong>Ome Baidya</strong>.
+                    I work on SEO and digital marketing strategies
+                    that help businesses improve search visibility,
+                    attract relevant traffic and build a stronger
+                    online presence.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="btn btn-primary">
+                        Explore My Services
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                    </a>
+
+                </div>
+
             </div>
 
-            <h1>
-                I Help Businesses
-                <span>Grow Online.</span>
-            </h1>
 
-            <p>
-                I am Ome Baidya, a Digital Marketing & SEO Specialist
-                focused on SEO, Local SEO, technical SEO, content strategy
-                and digital marketing.
-            </p>
+            <div class="hero-image">
 
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn btn-primary">
-                    View My Work
-                </a>
-
-                <a href="#contact" class="btn btn-outline">
-                    Contact Me
-                </a>
+                <img
+                    src="ome-baidya-digital-marketer.jpg.jpeg"
+                    alt="Ome Baidya - Digital Marketing and SEO Specialist"
+                >
 
             </div>
-
-        </div>
-
-
-        <div class="hero-image">
-
-            <img src="profile.jpg"
-                 alt="Ome Baidya - Digital Marketing and SEO Specialist">
 
         </div>
 
@@ -482,7 +660,8 @@
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
@@ -490,11 +669,19 @@
 
         <div class="section-title">
 
-            <div class="small-title">
+            <div class="small">
                 About Me
             </div>
 
-            <h2>Turning Search Into Growth</h2>
+            <h2>
+                Digital Marketing & SEO Specialist
+            </h2>
+
+            <p>
+                My focus is on practical SEO and digital marketing
+                strategies that can improve visibility and support
+                long-term business growth.
+            </p>
 
         </div>
 
@@ -503,36 +690,67 @@
 
             <div class="about-image">
 
-                <img src="professional.jpg"
-                     alt="Ome Baidya professional photo">
+                <img
+                    src="Ome Baidya – Digital Marketer storefront photo..jpeg"
+                    alt="Ome Baidya Digital Marketer"
+                >
 
             </div>
 
 
-            <div class="about-text">
+            <div class="about-content">
+
+                <h3>
+                    SEO With a Business-Focused Approach
+                </h3>
 
                 <p>
-                    I am Ome Baidya, a Digital Marketing & SEO Specialist
-                    with a strong focus on helping businesses improve their
-                    online visibility and attract relevant organic traffic.
+                    I am an SEO and Digital Marketing Specialist
+                    focused on helping websites become more visible
+                    in search engines and reach the right audience.
                 </p>
 
                 <p>
-                    My work covers keyword research, competitor analysis,
-                    on-page SEO, technical SEO, off-page SEO, content
-                    strategy and Local SEO.
+                    My work covers keyword research, on-page SEO,
+                    technical SEO, local SEO, content strategy,
+                    competitor analysis and SEO content.
                 </p>
 
                 <p>
-                    I also work with digital marketing channels including
-                    Google Ads, Meta Ads, social media marketing and lead
-                    generation.
+                    Alongside SEO, I am developing my skills in
+                    Google Ads, Meta Ads, social media marketing
+                    and lead generation to build a broader
+                    digital marketing skill set.
                 </p>
 
-                <p>
-                    My goal is simple: build practical marketing strategies
-                    that connect businesses with the right audience.
-                </p>
+
+                <ul class="about-list">
+
+                    <li>
+                        Global SEO & Local SEO
+                    </li>
+
+                    <li>
+                        Keyword Research & Search Intent
+                    </li>
+
+                    <li>
+                        Technical & On-Page SEO
+                    </li>
+
+                    <li>
+                        SEO Content & Content Strategy
+                    </li>
+
+                    <li>
+                        Google Ads & Meta Ads
+                    </li>
+
+                    <li>
+                        Competitor Analysis & SEO Audits
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -543,7 +761,8 @@
 </section>
 
 
-<!-- SKILLS -->
+
+<!-- ================= SKILLS ================= -->
 
 <section id="skills">
 
@@ -551,69 +770,102 @@
 
         <div class="section-title">
 
-            <div class="small-title">
+            <div class="small">
                 My Skills
             </div>
 
-            <h2>SEO & Digital Marketing</h2>
+            <h2>
+                Skills I Work With
+            </h2>
+
+            <p>
+                A practical combination of SEO, digital marketing,
+                content and analytics skills.
+            </p>
 
         </div>
 
 
         <div class="skills-grid">
 
+
             <div class="skill-card">
+
                 <h3>SEO</h3>
+
                 <p>
-                    Keyword research, search intent, competitor analysis,
-                    on-page SEO, off-page SEO and SEO strategy.
+                    Search engine optimization focused on
+                    visibility, relevance, search intent and
+                    organic growth.
                 </p>
+
             </div>
 
 
             <div class="skill-card">
-                <h3>Technical SEO</h3>
-                <p>
-                    Crawlability, indexability, XML sitemaps, robots.txt,
-                    canonical URLs, redirects and technical audits.
-                </p>
-            </div>
 
-
-            <div class="skill-card">
                 <h3>Local SEO</h3>
+
                 <p>
-                    Google Business Profile optimization, local keywords,
-                    local visibility and reputation-focused strategies.
+                    Google Business Profile optimization,
+                    local keywords, citations, reviews and
+                    local search visibility.
                 </p>
+
             </div>
 
 
             <div class="skill-card">
-                <h3>Content Strategy</h3>
+
+                <h3>Technical SEO</h3>
+
                 <p>
-                    Search-focused content planning, topical relevance,
-                    semantic SEO and content optimization.
+                    Crawlability, indexability, XML sitemaps,
+                    robots.txt, canonicals, redirects and
+                    technical site audits.
                 </p>
+
             </div>
 
 
             <div class="skill-card">
-                <h3>Google Ads</h3>
+
+                <h3>On-Page SEO</h3>
+
                 <p>
-                    Search campaign planning, keyword targeting,
-                    ad copy and conversion-focused campaign structure.
+                    Titles, meta descriptions, headings,
+                    internal linking, content structure and
+                    search intent optimization.
                 </p>
+
             </div>
 
 
             <div class="skill-card">
-                <h3>Meta Ads</h3>
+
+                <h3>Keyword Research</h3>
+
                 <p>
-                    Facebook and Instagram advertising, audience targeting,
-                    campaign strategy and lead generation.
+                    Finding relevant keywords by considering
+                    search intent, competition, relevance and
+                    business goals.
                 </p>
+
             </div>
+
+
+            <div class="skill-card">
+
+                <h3>SEO Content</h3>
+
+                <p>
+                    Creating useful, beginner-friendly and
+                    search-focused content with strong topical
+                    relevance.
+                </p>
+
+            </div>
+
 
         </div>
 
@@ -622,7 +874,8 @@
 </section>
 
 
-<!-- SERVICES -->
+
+<!-- ================= SERVICES ================= -->
 
 <section id="services">
 
@@ -630,75 +883,196 @@
 
         <div class="section-title">
 
-            <div class="small-title">
-                Services
+            <div class="small">
+                What I Do
             </div>
 
-            <h2>How I Can Help</h2>
+            <h2>
+                Digital Marketing & SEO Services
+            </h2>
+
+            <p>
+                SEO and digital marketing services designed around
+                visibility, relevance and sustainable growth.
+            </p>
 
         </div>
 
 
         <div class="services-grid">
 
-            <div class="service">
-                <div class="service-number">01</div>
-                <h3>SEO Audit</h3>
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 01
+                </div>
+
+                <h3>
+                    SEO Audit
+                </h3>
+
                 <p>
-                    Identify technical, on-page and content issues
-                    affecting organic search performance.
+                    Identify technical, on-page and content
+                    issues that may affect search visibility
+                    and organic performance.
                 </p>
+
             </div>
 
 
-            <div class="service">
-                <div class="service-number">02</div>
-                <h3>Local SEO</h3>
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 02
+                </div>
+
+                <h3>
+                    Local SEO
+                </h3>
+
                 <p>
-                    Improve local search visibility and help businesses
-                    reach customers searching in their service areas.
+                    Improve local search visibility through
+                    Google Business Profile optimization,
+                    local keywords, citations and relevant
+                    local content.
                 </p>
+
             </div>
 
 
-            <div class="service">
-                <div class="service-number">03</div>
-                <h3>Keyword Research</h3>
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 03
+                </div>
+
+                <h3>
+                    Keyword Research
+                </h3>
+
                 <p>
-                    Find relevant keywords based on search intent,
-                    competition and business goals.
+                    Research keywords based on search intent,
+                    relevance, competition and the business
+                    goals of the website.
                 </p>
+
             </div>
 
 
-            <div class="service">
-                <div class="service-number">04</div>
-                <h3>On-Page SEO</h3>
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 04
+                </div>
+
+                <h3>
+                    On-Page SEO
+                </h3>
+
                 <p>
-                    Optimize pages, headings, metadata, content structure,
-                    internal links and search intent alignment.
+                    Optimize pages with better headings,
+                    metadata, content structure, internal
+                    links and search intent alignment.
                 </p>
+
             </div>
 
 
-            <div class="service">
-                <div class="service-number">05</div>
-                <h3>Technical SEO</h3>
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 05
+                </div>
+
+                <h3>
+                    Technical SEO
+                </h3>
+
                 <p>
-                    Improve crawlability, indexability, site structure,
-                    redirects and technical SEO foundations.
+                    Work on crawlability, indexability,
+                    redirects, canonical URLs, XML sitemaps,
+                    robots.txt and technical issues.
                 </p>
+
             </div>
 
 
-            <div class="service">
-                <div class="service-number">06</div>
-                <h3>SEO Content</h3>
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 06
+                </div>
+
+                <h3>
+                    SEO Content Writing
+                </h3>
+
                 <p>
-                    Create useful, search-focused content designed to
-                    answer users' questions and support organic growth.
+                    Create helpful and search-focused content
+                    based on user intent, semantic relevance
+                    and clear content structure.
                 </p>
+
             </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 07
+                </div>
+
+                <h3>
+                    Google Ads
+                </h3>
+
+                <p>
+                    Developing skills in Google Search Ads,
+                    keyword targeting, ad copy and conversion
+                    focused campaign structure.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 08
+                </div>
+
+                <h3>
+                    Meta Ads
+                </h3>
+
+                <p>
+                    Facebook and Instagram advertising strategy
+                    including audience research, creative ideas
+                    and campaign structure.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-number">
+                    SERVICE 09
+                </div>
+
+                <h3>
+                    Competitor Analysis
+                </h3>
+
+                <p>
+                    Analyze competitors' keywords, content,
+                    search visibility and SEO opportunities to
+                    identify potential gaps.
+                </p>
+
+            </div>
+
 
         </div>
 
@@ -707,7 +1081,8 @@
 </section>
 
 
-<!-- PROJECTS -->
+
+<!-- ================= PROJECTS ================= -->
 
 <section id="projects">
 
@@ -715,93 +1090,219 @@
 
         <div class="section-title">
 
-            <div class="small-title">
-                Selected Work
+            <div class="small">
+                My Work
             </div>
 
-            <h2>SEO Projects</h2>
+            <h2>
+                Projects & Practice Work
+            </h2>
 
             <p>
-                A selection of websites and SEO projects where I have
-                practiced research, content strategy and optimization.
+                Websites and SEO projects where I practice and
+                apply digital marketing strategies.
             </p>
 
         </div>
 
 
-        <div class="projects">
+        <div class="projects-grid">
 
-            <div class="project">
 
-                <h3>JMC Equipment</h3>
+            <div class="project-card">
+
+                <span class="project-tag">
+                    E-COMMERCE SEO
+                </span>
+
+                <h3>
+                    JMC Equipment
+                </h3>
 
                 <p>
-                    SEO research and content optimization for a commercial
-                    kitchen equipment website targeting the UK market.
+                    SEO work and content planning for a commercial
+                    kitchen equipment website targeting the UK
+                    market.
                 </p>
 
-                <div class="tags">
-                    <span class="tag">SEO</span>
-                    <span class="tag">Keyword Research</span>
-                    <span class="tag">E-commerce SEO</span>
-                    <span class="tag">Content Strategy</span>
-                </div>
+                <ul>
+
+                    <li>
+                        Product & category keyword research
+                    </li>
+
+                    <li>
+                        Commercial search intent analysis
+                    </li>
+
+                    <li>
+                        Category SEO planning
+                    </li>
+
+                    <li>
+                        Internal linking strategy
+                    </li>
+
+                    <li>
+                        Product page optimization
+                    </li>
+
+                </ul>
+
+                <br>
+
+                <a
+                    href="https://jmcequipment.net/"
+                    target="_blank"
+                    class="btn btn-secondary"
+                >
+                    View Website
+                </a>
 
             </div>
 
 
-            <div class="project">
 
-                <h3>AI Market Lab</h3>
+            <div class="project-card">
+
+                <span class="project-tag">
+                    SEO PRACTICE
+                </span>
+
+                <h3>
+                    AI Market Lab
+                </h3>
 
                 <p>
-                    SEO-focused content and website optimization project
-                    covering AI tools and digital marketing topics.
+                    A practice website focused on AI tools and
+                    digital marketing topics, built to develop
+                    SEO, content and technical skills.
                 </p>
 
-                <div class="tags">
-                    <span class="tag">Content SEO</span>
-                    <span class="tag">On-Page SEO</span>
-                    <span class="tag">Keyword Research</span>
-                </div>
+                <ul>
+
+                    <li>
+                        Keyword research
+                    </li>
+
+                    <li>
+                        SEO content planning
+                    </li>
+
+                    <li>
+                        Search intent optimization
+                    </li>
+
+                    <li>
+                        Google Search Console
+                    </li>
+
+                    <li>
+                        Google Analytics
+                    </li>
+
+                </ul>
+
+                <br>
+
+                <a
+                    href="https://aimarketlab.liveblog365.com/"
+                    target="_blank"
+                    class="btn btn-secondary"
+                >
+                    View Website
+                </a>
 
             </div>
 
 
-            <div class="project">
 
-                <h3>Local SEO Practice</h3>
+            <div class="project-card">
+
+                <span class="project-tag">
+                    LOCAL SEO
+                </span>
+
+                <h3>
+                    Local SEO Practice
+                </h3>
 
                 <p>
-                    Practical work focused on Google Business Profile,
-                    local search visibility and local SEO strategy.
+                    Practical local SEO work focused on Google
+                    Business Profile optimization, local keywords,
+                    services and local search visibility.
                 </p>
 
-                <div class="tags">
-                    <span class="tag">Local SEO</span>
-                    <span class="tag">GBP</span>
-                    <span class="tag">Google Maps</span>
-                </div>
+                <ul>
+
+                    <li>
+                        Google Business Profile optimization
+                    </li>
+
+                    <li>
+                        Local keyword research
+                    </li>
+
+                    <li>
+                        Service optimization
+                    </li>
+
+                    <li>
+                        Local content ideas
+                    </li>
+
+                    <li>
+                        Google Maps visibility
+                    </li>
+
+                </ul>
 
             </div>
 
 
-            <div class="project">
 
-                <h3>SEO Portfolio</h3>
+            <div class="project-card">
+
+                <span class="project-tag">
+                    PORTFOLIO
+                </span>
+
+                <h3>
+                    Ome Digital Marketing Portfolio
+                </h3>
 
                 <p>
-                    Personal portfolio project built to showcase digital
-                    marketing, SEO knowledge and practical projects.
+                    My personal portfolio website showcasing my
+                    SEO, local SEO and digital marketing skills,
+                    projects and learning journey.
                 </p>
 
-                <div class="tags">
-                    <span class="tag">SEO</span>
-                    <span class="tag">Digital Marketing</span>
-                    <span class="tag">Personal Branding</span>
-                </div>
+                <ul>
+
+                    <li>
+                        SEO portfolio development
+                    </li>
+
+                    <li>
+                        Personal branding
+                    </li>
+
+                    <li>
+                        Digital marketing services
+                    </li>
+
+                    <li>
+                        Project presentation
+                    </li>
+
+                    <li>
+                        Responsive web design
+                    </li>
+
+                </ul>
 
             </div>
+
 
         </div>
 
@@ -810,7 +1311,8 @@
 </section>
 
 
-<!-- TOOLS -->
+
+<!-- ================= TOOLS ================= -->
 
 <section>
 
@@ -818,11 +1320,18 @@
 
         <div class="section-title">
 
-            <div class="small-title">
+            <div class="small">
                 Tools
             </div>
 
-            <h2>Tools I Work With</h2>
+            <h2>
+                Tools I Use
+            </h2>
+
+            <p>
+                SEO, analytics, content and website tools used
+                during research and optimization work.
+            </p>
 
         </div>
 
@@ -830,15 +1339,25 @@
         <div class="tools">
 
             <span class="tool">Google Search Console</span>
+
             <span class="tool">Google Analytics 4</span>
+
             <span class="tool">Semrush</span>
+
             <span class="tool">Moz</span>
+
             <span class="tool">Ubersuggest</span>
+
             <span class="tool">Screaming Frog</span>
+
             <span class="tool">WordPress</span>
-            <span class="tool">Rank Math</span>
+
             <span class="tool">Elementor</span>
+
+            <span class="tool">Rank Math</span>
+
             <span class="tool">ChatGPT</span>
+
             <span class="tool">Claude</span>
 
         </div>
@@ -848,7 +1367,222 @@
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- ================= PROCESS ================= -->
+
+<section id="process">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                My Approach
+            </div>
+
+            <h2>
+                How I Approach SEO
+            </h2>
+
+            <p>
+                A simple process for understanding a website,
+                its audience and its search opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <span>
+                    STEP 01
+                </span>
+
+                <h3>
+                    Research
+                </h3>
+
+                <p>
+                    Understand the business, audience,
+                    competitors and search intent.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>
+                    STEP 02
+                </span>
+
+                <h3>
+                    Audit
+                </h3>
+
+                <p>
+                    Identify technical, content and
+                    on-page SEO opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>
+                    STEP 03
+                </span>
+
+                <h3>
+                    Optimize
+                </h3>
+
+                <p>
+                    Improve pages, content, keywords,
+                    internal links and technical SEO.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <span>
+                    STEP 04
+                </span>
+
+                <h3>
+                    Measure
+                </h3>
+
+                <p>
+                    Monitor search performance and use
+                    data to identify further opportunities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="small">
+                FAQs
+            </div>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <div class="faq">
+
+
+            <details>
+
+                <summary>
+                    What SEO services do you provide?
+                </summary>
+
+                <p>
+                    I focus on keyword research, local SEO,
+                    technical SEO, on-page SEO, SEO audits,
+                    competitor analysis and SEO content.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do you work with Local SEO?
+                </summary>
+
+                <p>
+                    Yes. Local SEO is one of my main areas of
+                    focus, including Google Business Profile,
+                    local keyword research, local content and
+                    local search visibility.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do you work with e-commerce websites?
+                </summary>
+
+                <p>
+                    Yes. I practice e-commerce SEO including
+                    product page optimization, category SEO,
+                    keyword research, internal linking and
+                    search intent analysis.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Which tools do you use for SEO?
+                </summary>
+
+                <p>
+                    My SEO toolkit includes Google Search Console,
+                    GA4, Semrush, Moz, Ubersuggest, Screaming Frog,
+                    WordPress, Rank Math and other research tools.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do you also work with paid advertising?
+                </summary>
+
+                <p>
+                    Yes. Alongside SEO, I am developing practical
+                    skills in Google Search Ads, Meta Ads,
+                    social media marketing and lead generation.
+                </p>
+
+            </details>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact">
 
@@ -856,27 +1590,46 @@
 
         <div class="contact-box">
 
-            <div class="small-title">
-                Contact
+            <div class="eyebrow">
+                Let's Work Together
             </div>
 
-            <h2>Let's Grow Your Online Presence</h2>
+            <h2>
+                Have an SEO or Digital Marketing Project?
+            </h2>
 
             <p>
-                Have an SEO or digital marketing project?
-                Let's discuss how I can help.
+                If you are looking for help with SEO, Local SEO,
+                keyword research, technical SEO, content or
+                digital marketing, feel free to connect with me.
             </p>
 
-            <div class="hero-buttons" style="justify-content:center;">
 
-                <a href="mailto:your-email@example.com"
-                   class="btn btn-primary">
+            <div class="contact-links">
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="contact-link"
+                >
                     Email Me
                 </a>
 
-                <a href="#"
-                   class="btn btn-outline">
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    class="contact-link"
+                >
                     LinkedIn
+                </a>
+
+
+                <a
+                    href="https://wa.me/8801759836263"
+                    target="_blank"
+                    class="contact-link"
+                >
+                    WhatsApp
                 </a>
 
             </div>
@@ -888,17 +1641,29 @@
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
     <div class="container">
 
-        © 2026 Ome Baidya. All Rights Reserved.
+        <div class="footer-content">
+
+            <p>
+                © 2026 Ome Baidya. All Rights Reserved.
+            </p>
+
+            <p>
+                Digital Marketing & SEO Specialist
+            </p>
+
+        </div>
 
     </div>
 
 </footer>
+
 
 </body>
 </html>
